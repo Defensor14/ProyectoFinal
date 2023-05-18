@@ -1,0 +1,44 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background: #7149C6;
+}
+
+.titulo h1{
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+.txt{
+    width: 80%;
+    margin: 20px auto 20px auto;
+    color: #fff;
+}
+
+.txt h2{
+    text-align: center;
+}
+
+.imagen{
+    width: auto;
+}
+
+.imagen img{
+    width: 100%;
+}
+
+#SethRollins{
+    display:flex;
+    align-items: center;
+     margin: 0 auto;
+     flex-direction: column;
+     
+}
+
+#SethRollins img{
+    width: auto;
+    height: 60vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

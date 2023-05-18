@@ -28,31 +28,24 @@ try {
     $mail->ClearReplyTos();
     $mail->AddReplyTo('invitacionesparabodamx@gmail.com', 'Invitaciones Digitales');
 
-    $mail->addAddress('tirado.pla09@gmail.com');
-    //$mail->addAddress('aarok_ny224@hotmail.com');
-    $mail->Subject = "Confirmación de asistencia: " . htmlspecialchars($_POST["nombre"]);
+    $mail->addAddress('aarok_ny224@hotmail.com');
+    $mail->Subject = "Comentarios de: " . htmlspecialchars($_POST["nombre"]);
 
     if($_POST["assist"] == "y") {
         $mail->Body = "<h1>";
-        $mail->Body .= "¡" . htmlspecialchars($_POST["nombre"]) . " asistirá!";
+        $mail->Body .= "¡ A" . htmlspecialchars($_POST["nombre"]) . " le ha gustado la pagina!";
         $mail->Body .= "</h1>";
-        $mail->Body .= "<h2>Llevara ". htmlspecialchars($_POST["acompañantes"]) . " acompañante(s)</h2>";
-        $mail->Body .= "<br><h2>Bebida preferida</h2>";
-        $mail->Body .= "<p>" . htmlspecialchars($_POST["bebida"]) . "</p>";
+        $mail->Body .= "<h2>Ademas la calificaria con ". htmlspecialchars($_POST["acompañantes"]) . " </h2>";
     } 
-    else if ($_POST["assist"] == "p"){
-        $mail->Body = "<h1>";
-        $mail->Body .= htmlspecialchars($_POST["nombre"]) . " esta pendiente de confirmar su asistencia";
-        $mail->Body .= "</h1>";
-        $mail->Body .= "<h2>posiblemente lleve ". htmlspecialchars($_POST["acompañantes"]) . " acompañante(s)</h2>";
-    }
     else {
         $mail->Body = "<h1>";
-        $mail->Body .= htmlspecialchars($_POST["nombre"]) . " no podrá asistir a tu evento.";
+        $mail->Body .= "¡ A" . htmlspecialchars($_POST["nombre"]) . " no le ha gustado la pagina!";
         $mail->Body .= "</h1>";
+        $mail->Body .= "<h2>Y la calificaria con ". htmlspecialchars($_POST["acompañantes"]) . " :( </h2>";
     }
-    $mail->Body .= "<h2>Mensaje para la los novios:</h2>";
-    $mail->Body .= "<p>" . htmlspecialchars($_POST["mensaje"]) . "</p>";
+    $mail->Body .= "<h2>Comentarios y sugerencias:</h2>";
+    $mail->Body .= "<p>" . htmlspecialchars($_POST["mensaje"]) . "</p><br>";
+    $mail->Body .= "<h2>FAVOR DE NO CONTESTAR ESTE CORREO, EL USUARIO DE ENVIO ES SOLOTEMPORAL</h2>";
 
     $mail->send();
     echo "success";

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="styles/style3.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+
+    <title>Comentarios</title>
+</head>
+
+<body>
+
+    <!--header negro-->
+    <header class="up">
+        <div class="containerNAV1">
+            <a href="index.html"><h2 id="logonav">Defensor productions</h2></a>
+            <div class="nav1">
+                <ul>
+                <li><a href="#" class="nav">English</a></li>
+                <li><a href="#" class="nav">Spanish</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--header blanco-->
+        <div class="containerNAV2">
+            <div class="nav2">
+                <ul>
+                    <li><a href="KeyfabeW.html" class="nav">Kayfabe X wrestling</a></li>
+                    <li><a href="Psich.html" class="nav">Kayfabe X Psicolgia</a></li>
+                    <li><a href="Politic.html" class="nav">Kayfabe X Politica</a></li>
+                 </ul>
+            </div>
+        </div>
+     </header>
+
+
+
+     <section id="asistencia">
+        <h2 id="success" class="success bigmargin" style="display: none;">¡Tu mensaje se ha enviado con éxito!</h2>
+        <h2 id="oops" class="error bigmargin" style="display: none;">Algo salió mal...</h2>
+        <form id="form">
+            <label>A continuacion le dejamos una pequeña encuesta.<br>
+                Es importante saber su opinion, asi que lo que responda sera leido de inmediato en nuestro correo oficial</label><br>
+                
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" name="nombre" id="nombre"><br>
+
+            <label for="asistiras">¿Te ha gustado la pagina?</label>
+            <div>
+                <input type="radio" id="si" name="asistiras" value="si">
+                <label for="si">Sí</label>
+                <input type="radio" id="no" name="asistiras" value="no">
+                <label for="no">No</label>
+            </div><br>
+            
+            <label for="acompañantes">¿Con cuanto la calificarias?</label>
+            <input type="number" name="acompañantes" id="acompañantes"><br>
+
+            <label for="mensaje">Dejenos sus comentarios y recomendaciones:</label>
+            <textarea type="text" name="mensaje" id="mensaje" rows="3"></textarea>
+            <input type="button" id="submit" name="submit" value="Enviar" onclick="submitForm();">
+        </form>
+    </section>
+
+    <div class="txt">
+        <h2 style="color:#000">Si gustas probar esta pagina en tu celular solo escanea!</h2>
+    </div>
+    <div class="imagen">
+        <img src="/media/Recursos/personajesLL.jpg">
+    </div>
+
+    <footer>
+        <a target="_blank" href="https://www.instagram.com/"><img
+                src="media/instagram.svg"></a>
+        <p>By: Aron Navarro de la Rosa<br>Derechos reservados 2023</p>
+        <a target="_blank"
+            href="https://api.whatsapp.com/"><img
+                src="media/WS.svg"></a>
+    </footer>
+
+</body>
+
+<!--Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="jscripts/jquery.lwtCountdown-1.0.js"></script>
+<script src="jscripts/script.js"></script>
+
+</html>

@@ -1,0 +1,17 @@
+body{
+    background: #FE6244;
+}
+
+.contenedor{
+    background: #fff;
+    margin: 0 auto;
+    width: 800px;
+    padding: 20px;
+}
+
+article{
+    padding-top: 20px;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: dotted 4px #7149C6;
+}

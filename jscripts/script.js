@@ -114,16 +114,9 @@ function submitForm() {
   let nombre = document.getElementById("nombre");
   let si = document.getElementById("si");
   let no = document.getElementById("no");
-  let pendiente = document.getElementById("pendiente");
   let acompanantes = document.getElementById("acompañantes");
   let mensaje = document.getElementById("mensaje");
 
-  let tequila = document.getElementById("tequila");
-  let mezcal = document.getElementById("mezcal");
-  let cocteles = document.getElementById("cocteles");
-  let whisky = document.getElementById("whisky");
-  let ron = document.getElementById("ron");
-  let vodka = document.getElementById("vodka");
 
   form.style.display = "none";
 
@@ -131,30 +124,8 @@ function submitForm() {
   if(si.checked) {
     post += "&assist=y";
   } 
-  else if(pendiente.checked){
-    post += "&assist=p";
-  }
   else {
     post += "&assist=n";
-  }
-
-  if(tequila.checked) {
-    post += "&bebida=Tequila";
-  } 
-  else if(mezcal.checked) {
-    post += "&bebida=Mezcal";
-  } 
-  else if(cocteles.checked) {
-    post += "&bebida=" + encodeURIComponent("Cócteles");
-  } 
-  else if(whisky.checked) {
-    post += "&bebida=" + encodeURIComponent("Whisky");
-  } 
-  else if(ron.checked) {
-    post += "&bebida=" + encodeURIComponent("Ron");
-  } 
-  else {
-    post += "&bebida=" + encodeURIComponent("vodka");
   }
 
   post += "&acompañantes=" + encodeURIComponent(acompanantes.value);

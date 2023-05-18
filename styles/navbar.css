@@ -1,0 +1,66 @@
+/*Navbar*/
+
+.containerNAV1{
+ 
+    height: 50px;
+    margin:  0 auto;
+    position: relative;
+    background: black;
+}
+.containerNAV1 a{
+    color: #ffff;
+    text-decoration: none;
+}
+.containerNAV2{
+ 
+    height: 50px;
+    margin:  0 auto;
+    position: relative;
+    background: #FFDEB9;
+}
+.containerNAV2 a{
+    color: #FC2947;
+    text-decoration: none;
+}
+
+#logonav{
+    padding: 9px;
+    float: left;
+    width: 345px;
+    margin-left: 100px;
+}
+
+.nav1{
+    margin-right: 100px;
+    float: right;
+    display:flex;
+}
+
+.nav1 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 16px;
+}
+
+.nav1 ul li:hover{
+   background: gray;
+}
+
+.nav2{
+    margin-left: 6em;
+    display:flex;
+}
+
+.nav2 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.nav2 ul li:hover{
+    background: #FC2947;
+    color: #ffff;
+ }
+ .nav2 ul li a:hover{
+    color: #ffff;
+ }
