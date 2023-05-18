@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Repositorio de pruebas</title>
+
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Icono de la pagina-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!---->
+
+    <!--Hojas de estilo-->
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!--Slider revolution con HTML, CSS y JS-->
+    <div class="slides">
+        <div class="slide active">
+            <div class="slideContainer">
+                <div class="content">
+                    <h1>Slide 1</h1>
+                    <p>
+                        Lorem ipsum text
+                    </p>
+                    <a class="nextS" href="javascript:;">Explorar ahora</a>
+                </div>
+            </div>
+        </div>
+        <!--Slide-->
+
+        <div class="slide">
+            <div class="slideContainer">
+                <div class="content">
+                    <h1>Slide 2</h1>
+                    <p>
+                        Lorem ipsum text
+                    </p>
+                    <a class="nextS" href="javascript:;">Explorar ahora</a>
+                </div>
+            </div>
+        </div>
+        <!--Slide-->
+
+        <div class="slide">
+            <div class="slideContainer">
+                <div class="content">
+                    <h1>Slide 3</h1>
+                    <p>
+                        Lorem ipsum text
+                    </p>
+                    <a class="nextS" href="javascript:;">Explorar ahora</a>
+                </div>
+            </div>
+        </div>
+        <!--Slide-->
+        <div class="controls">
+            <div class="prev">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="next">
+                <i class="fa fa-arrow-right"></i>
+            </div>
+        </div>
+        <!--.Controls-->
+        <div class="indicatorContainer">
+
+        </div>
+        <!--.indicatorContainer-->
+    </div>
+    <!--Slides-->
+
+<!--
+    <article>
+        <img class="fill" draggable="false" src="media/pdf/1.webp">
+
+        <div id="countdown_dashboard" class="clock-container">
+
+                <div class="dash months_dash">
+                <div class="circle">
+                    <div class="digit">0</div>
+                    <div class="digit">0</div>
+                </div>
+                <p class="dash_title">Meses</p>
+            </div>
+
+            <div class="dash days_dash">
+                <div class="circle">
+                    <div class="digit">0</div>
+                    <div class="digit">0</div>
+                </div>
+                <p class="dash_title">Días</p>
+            </div>
+
+            <div class="dash hours_dash">
+                <div class="circle">
+                    <div class="digit">0</div>
+                    <div class="digit">0</div>
+                </div>
+                <p class="dash_title">Hrs</p>
+            </div>
+
+            <div class="dash minutes_dash">
+                <div class="circle">
+                    <div class="digit">0</div>
+                    <div class="digit">0</div>
+                </div>
+                <p class="dash_title">Min</p>
+            </div>
+
+        </div>
+
+        <img class="fill" draggable="false" src="media/pdf/2.webp">
+        <a id="ceremonia_link" class="fakelink" href="https://goo.gl/maps/KFQpaWAY6uYjmBBE8" target="_blank"></a>
+        <a id="recepcion_link" class="fakelink" href="https://goo.gl/maps/tZUXLTPTyzPjRFes9" target="_blank"></a>
+        <img class="fill" draggable="false" src="media/pdf/3.webp">
+        <img class="fill" draggable="false" src="media/pdf/4.webp">
+        <section>
+            <a id="mapa_hotel_1" class="fakelink2" href="https://goo.gl/maps/vPhhvdzR1iE2ebGm6" target="_blank"></a>
+            <a id="reserva_hotel_1" class="fakelink2" href="https://www.yemayaclub.com" target="_blank"></a>
+        </section>
+        <section>
+            <a id="mapa_hotel_2" class="fakelink2" href="https://goo.gl/maps/onuV2rKYeeTkqk3P6" target="_blank"></a>
+            <a id="reserva_hotel_2" class="fakelink2" href="https://santa-maria-resort-boutique-collection.negocio.site/" target="_blank"></a>
+        </section>
+        <img class="fill" draggable="false" src="media/pdf/5.webp">
+        <img class="fill" draggable="false" src="media/pdf/6.webp">
+        <img class="fill" draggable="false" src="media/pdf/7.webp">
+        <img class="fill" draggable="false" src="media/pdf/8-1.webp">
+
+        <section id="asistencia">
+            <h2 id="success" class="success bigmargin" style="display: none;">¡Tu mensaje se ha enviado con éxito!</h2>
+            <h2 id="oops" class="error bigmargin" style="display: none;">Algo salió mal...</h2>
+            <form id="form">
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" name="nombre" id="nombre"><br>
+                <label for="asistiras">¿Asistirás a nuestro evento?</label><br>
+                <div>
+                    <input type="radio" id="si" name="asistiras" value="si">
+                    <label for="si">Sí</label>
+                    <input type="radio" id="no" name="asistiras" value="no">
+                    <label for="no">No</label>
+                    <input type="radio" id="pendiente" name="asistiras" value="pendiente">
+                    <label for="no">Pendiente</label>
+                </div>
+                
+                <label for="acompañantes">¿Con cuantos acompañantes asistiras?</label><br>
+                <input type="number" name="acompañantes" id="acompañantes">
+
+                <label for="bebida">¿Qué bebidas prefieres?</label><br>
+                <div>
+                    <input type="radio" id="tequila" name="bebida" value="tequila">
+                    <label for="tequila">Tequila</label>
+               
+                    <input type="radio" id="mezcal" name="bebida" value="mezcal">
+                    <label for="mezcal">Mezcal</label>
+                
+                    <input type="radio" id="cocteles" name="bebida" value="cocteles">
+                    <label for="cocteles">Cócteles</label>
+                
+                    <input type="radio" id="whisky" name="bebida" value="whisky">
+                    <label for="whisky">Whisky</label>
+                
+                    <input type="radio" id="ron" name="bebida" value="ron">
+                    <label for="ron">Ron</label>
+
+                    <input type="radio" id="vodka" name="bebida" value="vodka">
+                    <label for="vodka">Vodka</label>
+                </div>
+
+                <label for="mensaje">Mensaje para los novios:</label><br>
+                <textarea type="text" name="mensaje" id="mensaje" rows="3"></textarea>
+                <input type="button" id="submit" name="submit" value="Enviar" onclick="submitForm();">
+            </form>
+        </section>
+        
+
+        <a id="liverpool_link" class="fakelink" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51102946" target="_blank"></a>
+        <img class="fill" draggable="false" src="media/pdf/9-1.webp">
+        <img class="fill" draggable="false" src="media/pdf/fotoCompleta.jpeg">
+
+    -->
+        <footer>
+            <a target="_blank" href="https://www.instagram.com/invitacionesparaboda/"><img
+                    src="media/instagram.svg"></a>
+            <p>Invitaciones Digitales<br>¡Cotiza la tuya!</p>
+            <a target="_blank"
+                href="https://api.whatsapp.com/send?phone=5213112307312&text=Hola%20Marifer%20me%20interesa%20información%20sobre%20las%20Invitaciones%20Digitales."><img
+                    src="media/WS.svg"></a>
+        </footer>
+    </article>
+
+</body>
+
+<!--Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="jscripts/jquery.lwtCountdown-1.0.js"></script>
+<script src="jscripts/script.js"></script>
+
+</html>
