@@ -28,7 +28,9 @@ try {
     $mail->ClearReplyTos();
     $mail->AddReplyTo('invitacionesparabodamx@gmail.com', 'Invitaciones Digitales');
 
-    $mail->addAddress('aarok_ny224@hotmail.com');
+    //$mail->addAddress('aarok_ny224@hotmail.com');
+    $mail->addAddress('fernando.palacios@uacj.mx');
+    
     $mail->Subject = "Comentarios de: " . htmlspecialchars($_POST["nombre"]);
 
     if($_POST["assist"] == "y") {
