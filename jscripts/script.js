@@ -107,28 +107,27 @@ jQuery(document).ready(function () {
 //Funcionalidad del formulario de la invitacion
 function submitForm() {
 
-  let form = document.getElementById("form");
-  let success = document.getElementById("success");
-  let oops = document.getElementById("oops");
-
-  let nombre = document.getElementById("nombre");
-  let si = document.getElementById("si");
-  let no = document.getElementById("no");
-  let acompanantes = document.getElementById("acompañantes");
-  let mensaje = document.getElementById("mensaje");
-
+  var form = document.getElementById("form");
+  var success = document.getElementById("success");
+  var oops = document.getElementById("oops");
 
   form.style.display = "none";
 
+  var nombre = document.getElementById("nombre");
+  var acompañantes = document.getElementById("acompañantes");
+  var asistiras = document.getElementById("asistiras");
+  var mensaje = document.getElementById("mensaje");
+
   var post = "nombre=" + encodeURIComponent(nombre.value);
+
   if(si.checked) {
     post += "&assist=y";
-  } 
+  }
   else {
     post += "&assist=n";
   }
-
-  post += "&acompañantes=" + encodeURIComponent(acompanantes.value);
+  
+  post += "&acompañantes=" + encodeURIComponent(acompañantes.value);
   post += "&mensaje=" + encodeURIComponent(mensaje.value);
 
   const xhttp = new XMLHttpRequest();
@@ -149,7 +148,7 @@ function submitForm() {
     form.style.display = "block";
     oops.style.display = "block";
   }
-  xhttp.open("POST", "mailer.php", true);
+  xhttp.open("POST", "meiler.php", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send(post);
 }

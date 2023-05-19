@@ -33,7 +33,7 @@ try {
 
     if($_POST["assist"] == "y") {
         $mail->Body = "<h1>";
-        $mail->Body .= "¡ A" . htmlspecialchars($_POST["nombre"]) . " le ha gustado la pagina!";
+        $mail->Body .= "¡ A " . htmlspecialchars($_POST["nombre"]) . " le ha gustado la pagina!";
         $mail->Body .= "</h1>";
         $mail->Body .= "<h2>Ademas la calificaria con ". htmlspecialchars($_POST["acompañantes"]) . " </h2>";
     } 
@@ -45,7 +45,7 @@ try {
     }
     $mail->Body .= "<h2>Comentarios y sugerencias:</h2>";
     $mail->Body .= "<p>" . htmlspecialchars($_POST["mensaje"]) . "</p><br>";
-    $mail->Body .= "<h2>FAVOR DE NO CONTESTAR ESTE CORREO, EL USUARIO DE ENVIO ES SOLOTEMPORAL</h2>";
+    $mail->Body .= "<h2>FAVOR DE NO CONTESTAR ESTE CORREO, EL USUARIO DE ENVIO ES SOLO TEMPORAL</h2>";
 
     $mail->send();
     echo "success";
