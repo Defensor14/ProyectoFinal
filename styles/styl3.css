@@ -5,11 +5,12 @@ body{
 .contenedor{
     background: #fff;
     margin: 0 auto;
-    width: 800px;
+    width: 80%;
     padding: 20px;
 }
 
 article{
+    width: 100%;
     padding-top: 20px;
     column-count: 3;
     column-gap: 20px;
