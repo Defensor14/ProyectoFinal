@@ -2,10 +2,11 @@
 
 .containerNAV1{
  
-    height: 50px;
+    height: auto;
     margin:  0 auto;
     position: relative;
     background: black;
+    display: flex;
 }
 .containerNAV1 a{
     color: #ffff;
@@ -13,10 +14,11 @@
 }
 .containerNAV2{
  
-    height: 50px;
+    height: auto;
     margin:  0 auto;
     position: relative;
     background: #FFDEB9;
+    display: flex;
 }
 .containerNAV2 a{
     color: #FC2947;
@@ -26,7 +28,7 @@
 #logonav{
     padding: 9px;
     float: left;
-    width: 345px;
+    width: 100%;
     margin-left: 100px;
 }
 

@@ -36,9 +36,16 @@
      
 }
 
-#SethRollins img{
-    width: auto;
-    height: 60vh;
+#SethRollins2{
+    display:flex;
+    align-items: center;
+     margin: 0 auto;
+     flex-direction: column;
+     
+}
+
+#SethRollins2 img{
+    width: 30vw;
     margin-top: 20px;
     margin-bottom: 20px;
 }
